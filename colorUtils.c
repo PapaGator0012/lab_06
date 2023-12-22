@@ -22,6 +22,7 @@ int toGrayScale(int *r, int *g, int *b, Mode mode) {
   else if(mode==LUMINOSITY){
     *r=*g=*b=(0.21* *r + 0.72* *g+0.07* *b);
   }
+  return No_Error;
 }
 
 int toSepia(int *r, int *g, int *b) {
