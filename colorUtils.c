@@ -14,9 +14,11 @@ int min(int a, int b, int c) {
 
 int toGrayScale(int *r, int *g, int *b, Mode mode) {
   if(r==NULL || g== NULL || b == NULL){
-    return Error;
+    return error;
   }
-  
+  if(mode==AVERAGE){
+    
+  }
 }
 
 int toSepia(int *r, int *g, int *b) {
