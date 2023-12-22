@@ -34,4 +34,11 @@ int toSepia(int *r, int *g, int *b) {
 
   *b=(0.272* *r + 0.534* *g+0.131* *b);
   roundValue(*b);
+
+  int roundValue(int a){
+    if(a>255){
+      a=255;
+    }
+    return roundValue(a);
+  }
 }
