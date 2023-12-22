@@ -17,7 +17,7 @@ int toGrayScale(int *r, int *g, int *b, Mode mode) {
     return error;
   }
   if(mode==AVERAGE){
-    
+    *r=*g=*b=(*r+*g+*b)/3;
   }
 }
 
